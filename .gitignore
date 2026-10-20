@@ -2,3 +2,11 @@ node_modules/
 .DS_Store
 Thumbs.db
 *.zip
+.playwright-mcp/
+output/review/
+*-review.png
+review-*.png
+rig-*.png
+scene-*.png
+idle-field.png
+dist/

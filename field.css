@@ -1,0 +1,77 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; width: 100%; height: 100%; overflow: hidden; background: #fff; color: #111; }
+body, button { font: 14px/1.7 ui-monospace, "Cascadia Mono", Menlo, monospace; }
+button { color: inherit; cursor: pointer; }
+button:focus-visible, #enter:focus-visible, #leave:focus-visible { outline: 2px dashed #111; outline-offset: 6px; }
+[hidden] { display: none !important; }
+#home { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; gap: clamp(2rem,5vw,4rem); padding: 2rem; background: white; z-index: 10; }
+#enter { padding: 0; border: 0; background: transparent; -webkit-tap-highlight-color: transparent; }
+#enter img { display: block; height: clamp(150px,40vh,360px); width: auto; }
+h1 { font-size: 1.6rem; font-weight: 500; margin: 0 0 1rem; }
+p { margin: 0 0 .6rem; color: #333; }
+a { color: inherit; }
+#field, #viewport { position: absolute; inset: 0; overflow: hidden; }
+#viewport { inset: auto; left: 50%; top: 50%; transform: translate(-50%,-50%); touch-action: none; cursor: crosshair; }
+#world { position: absolute; width: 3200px; height: 2200px; transform-origin: 0 0; }
+#objects { position: absolute; inset: 0; pointer-events: none; }
+.scenery { position: absolute; display: block; user-select: none; pointer-events: none; transform-origin: 50% 97%; }
+.tree { animation: tree-sway 6s ease-in-out infinite alternate; }
+.plant { animation: plant-sway 4s ease-in-out infinite alternate; }
+.fire { animation: flicker .8s ease-in-out infinite alternate; }
+.resource { pointer-events: auto; cursor: pointer; }
+.resource.spent { opacity: .4; }
+.resource.hit { animation: hit .3s ease-out; }
+.animal-rabbit { animation: rabbit-hop 7s ease-in-out infinite; }
+.animal-snail { animation: snail-creep 18s ease-in-out infinite alternate; }
+.animal-hedgehog { animation: flicker 3s ease-in-out infinite alternate; }
+.animal-butterfly { animation: butterfly 1.3s ease-in-out infinite alternate; }
+.bird-wing { position:absolute; width:48%; height:auto; left:26%; top:34%; transform-origin:18% 50%; animation:wing 2.5s ease-in-out infinite alternate; }
+@keyframes rabbit-hop { 0%,70%,100% { transform:translateY(0); } 75%,85% { transform:translateY(-4px); } 80%,90% { transform:translateY(0); } }
+@keyframes snail-creep { to { transform:translateX(8px); } }
+@keyframes butterfly { to { transform:translateY(-5px) scaleX(.65); } }
+@keyframes wing { 70%,100% { transform:rotate(-17deg); } }
+@keyframes tree-sway { from { transform: rotate(-.35deg); } to { transform: rotate(.5deg); } }
+@keyframes plant-sway { to { transform: rotate(2deg); } }
+@keyframes flicker { to { transform: scale(.98,1.04); } }
+@keyframes hit { 50% { transform: rotate(-2deg) translateY(1px); } }
+
+/* All parts attach to the same shoulder/hip coordinates, measured from cropped artwork. */
+#player { position: absolute; width: 100px; height: 154px; transform: translate(-50%,-100%); pointer-events: none; }
+#stride, #puppet { position: absolute; width: 100px; height: 154px; transform-origin: 50% 100%; }
+#puppet.left { transform: scaleX(-1); }
+.part { position: absolute; display: block; object-fit: fill; user-select: none; }
+.part.head { left: 6.55px; top: 0; width: 80px; height: 96px; z-index: 8; transform-origin: 54.3% 96%; }
+#puppet[data-view="back"] .head { left: 10.96px; }
+.part.torso { left: 32px; top: 90px; width: 36px; height: 37px; z-index: 5; }
+.part.arm-left { left: 32px; top: 99px; width: 10px; height: 35px; z-index: 4; transform-origin: 50% 40%; scale: -1 1; }
+.part.arm-right { left: 58px; top: 99px; width: 10px; height: 35px; z-index: 4; transform-origin: 50% 40%; }
+.part.leg-left { left: 39px; top: 117px; width: 10px; height: 37px; z-index: 3; transform-origin: 50% 8%; }
+.part.leg-right { left: 51px; top: 117px; width: 10px; height: 37px; z-index: 3; transform-origin: 50% 8%; }
+.part.arm-left,.part.arm-right { clip-path: inset(40% 0 0); }
+#puppet[data-view="side"] .head { left: .6px; width: 84px; }
+#puppet[data-view="side"] .torso { left: 43px; top: 90px; width: 23px; height: 37px; }
+#puppet[data-view="side"] .arm-left { left: 46px; top: 99px; width: 13px; height: 35px; z-index: 2; scale: 1; }
+#puppet[data-view="side"] .arm-right { left: 46px; top: 99px; width: 13px; height: 35px; z-index: 6; }
+#puppet[data-view="side"] .leg-left { left: 50px; top: 117px; width: 16px; height: 37px; z-index: 2; transform-origin: 25% 8%; }
+#puppet[data-view="side"] .leg-right { left: 52px; top: 117px; width: 16px; height: 37px; z-index: 3; transform-origin: 25% 8%; }
+#player.walking #stride { animation: body-hop .34s ease-in-out infinite; }
+.walking .head { animation: none; }
+.walking .arm-left { animation: front-arm .34s ease-in-out infinite alternate; }
+.walking .arm-right { animation: front-arm .34s ease-in-out infinite alternate-reverse; }
+.walking .leg-left { animation: front-leg .34s ease-in-out infinite alternate; }
+.walking .leg-right { animation: front-leg .34s ease-in-out infinite alternate-reverse; }
+.walking[data-view="side"] .arm-left { animation-name: side-arm; }
+.walking[data-view="side"] .arm-right { animation-name: side-arm; }
+.walking[data-view="side"] .leg-left { animation-name: side-leg; }
+.walking[data-view="side"] .leg-right { animation-name: side-leg; }
+.working .arm-right { animation: gather .36s ease-in-out infinite alternate; }
+@keyframes body-hop { 0%,100% { transform: translateY(0) scale(1.025,.96); } 45% { transform: translateY(-7px) scale(.99,1.025); } 70% { transform: translateY(-4px) scale(1,1.01); } }
+@keyframes front-arm { from { transform: translateY(1px) rotate(-2deg); } to { transform: translateY(-1px) rotate(2deg); } }
+@keyframes front-leg { from { transform: translateY(0) scaleY(1); } to { transform: translateY(-3px) scaleY(.96); } }
+@keyframes side-arm { from { transform: rotate(-19deg); } to { transform: rotate(19deg); } }
+@keyframes side-leg { from { transform: rotate(-22deg); } to { transform: rotate(22deg); } }
+@keyframes gather { to { transform: rotate(-48deg); } }
+
+#leave { position: absolute; top: 18px; left: 23px; padding: 0; border: 0; background: #fff; font-size: 20px; line-height: 1; z-index: 2; text-decoration: none; }
+@media(prefers-reduced-motion:reduce) { .tree,.plant,.fire,.part,.animal,.bird-wing,#stride { animation: none !important; } }
+@media(max-width:640px) { #home { flex-direction: column; text-align: center; gap: 1.5rem; } h1 { font-size: 1.4rem; } #leave { left: 16px; } }
