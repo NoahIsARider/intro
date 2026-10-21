@@ -66,6 +66,21 @@
     const body=place(name,x,y,width,{className:'animal animal-'+name});
     if(name==='bird'&&body){const holder=document.createElement('div');holder.className='scenery bird-rig';holder.style.cssText=body.style.cssText;body.replaceWith(holder);body.style.cssText='display:block;width:100%;height:100%';body.className='bird-body';holder.append(body);const wing=makeImage('bird-wing');wing.className='bird-wing';holder.append(wing);}
   }
+  // Three camp objects are also doors into a room.  Each anchor carries a box
+  // slightly larger than its artwork, because the stool is a small target.
+  const doors={tent:['weird.html','weird stuff about me',10],ruin:['ideas.html','my ideas',10]};
+  for(const item of placements){
+    const door=doors[item.name];if(!door)continue;
+    const [href,label,pad]=door;
+    const anchor=document.createElement('a');
+    anchor.className='door';anchor.href=href;anchor.setAttribute('aria-label',label);
+    anchor.style.cssText=`left:${item.x-item.width/2-pad}px;top:${item.y-item.height-pad}px;width:${item.width+pad*2}px;height:${item.height+pad*2}px;z-index:${Math.round(item.y)}`;
+    item.image.parentNode.insertBefore(anchor,item.image);
+    const mirror=item.image.style.scale;
+    anchor.append(item.image);
+    item.image.style.cssText=`position:absolute;left:${pad}px;top:${pad}px;width:${item.width}px;height:${item.height}px`;
+    if(mirror)item.image.style.scale=mirror;
+  }
   for(const [name,sprite] of [['leg-left','leg-left'],['leg-right','leg-right'],['arm-left','arm-left'],['arm-right','arm-right'],['torso','torso-front'],['head','head-front']]){const image=makeImage(sprite);image.className='part '+name;$('#puppet').append(image);parts[name]=image;}
   for(const name of ['head-back','head-side','torso-back','torso-side','arm-profile','leg-profile'])makeImage(name);
   function orient(view,sign=direction){
@@ -128,7 +143,7 @@
   }
   $('#leave').addEventListener('click',save);
   let drag=null;const viewport=$('#viewport');
-  viewport.addEventListener('pointerdown',event=>{if(event.button!==0||event.target.closest('.resource'))return;drag={x:event.clientX,y:event.clientY,cx:camera.x,cy:camera.y,moved:false};viewport.setPointerCapture(event.pointerId);});
+  viewport.addEventListener('pointerdown',event=>{if(event.button!==0||event.target.closest('.resource')||event.target.closest('.door'))return;drag={x:event.clientX,y:event.clientY,cx:camera.x,cy:camera.y,moved:false};viewport.setPointerCapture(event.pointerId);});
   viewport.addEventListener('pointermove',event=>{if(drag&&Math.hypot(event.clientX-drag.x,event.clientY-drag.y)>6)drag.moved=true;});
   viewport.addEventListener('pointerup',event=>{if(!drag)return;if(!drag.moved){const box=viewport.getBoundingClientRect();setDestination((event.clientX-box.left-camera.x)/camera.scale,(event.clientY-box.top-camera.y)/camera.scale);}drag=null;});
   viewport.addEventListener('pointercancel',()=>drag=null);

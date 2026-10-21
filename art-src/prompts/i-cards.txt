@@ -1,0 +1,18 @@
+Draw with your image generation tool, one single image. Save it as the absolute path D:/Projects/个人主页/intro/art-src/raw/i-cards.png. Use no code, no API, no download, only the image generation tool.
+
+Use the attached drawings (ref/ref-desk.png, ref/ref-cabinet.png, ref/ref-reading.png) as the exact drawing-style reference. Copy their handling of pencil line, paper and shading. Do not copy their subjects or their arrangements.
+
+STYLE
+A loose graphite pencil drawing on warm off-white paper, then cut out and pasted down, like a plate from a faded children's encyclopedia. Contour lines hand-drawn, uneven in weight, wobbly, sometimes broken and restated, never a clean vector line. The inside of the object is bare paper, warm off-white, with a faint paper grain. Shading is sparse directional pencil hatching, economical, only a few strokes where a form turns, plus at most one soft smudge. A little dusty chalk colour may sit on the paper, chalky and desaturated, like pigment rubbed into the grain. The object is complete and centred with a generous empty margin around it. Slightly wrong, hand-built proportions are good.
+
+BACKGROUND
+One flat, even, pure magenta RGB(255,0,255) backdrop filling the whole canvas right up to the object's outline. Uniform, no gradient, no vignette, no shadow, no glow, no second colour anywhere behind the object. This magenta is a working backdrop for cutting the object out.
+
+FORBIDDEN
+Text, letters, numbers, signature, watermark, border, frame, drop shadow, floor, horizon, scenery, dark background, photograph, 3D render, airbrush, gradient mesh, glossy highlight, cartoon eyes, anime, chibi, sticker, sparkle, neon, fully saturated colour, basket weave of repeated shapes.
+
+COLOUR
+graphite with a sepia wash, bone cream and one note of rust.
+
+SUBJECT
+A stack of blank index cards seen edge on, fanned open, one card lifted and turned, ruled lines left empty. About the width of a hand.

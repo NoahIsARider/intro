@@ -75,3 +75,9 @@ a { color: inherit; }
 #leave { position: absolute; top: 18px; left: 23px; padding: 0; border: 0; background: #fff; font-size: 20px; line-height: 1; z-index: 2; text-decoration: none; }
 @media(prefers-reduced-motion:reduce) { .tree,.plant,.fire,.part,.animal,.bird-wing,#stride { animation: none !important; } }
 @media(max-width:640px) { #home { flex-direction: column; text-align: center; gap: 1.5rem; } h1 { font-size: 1.4rem; } #leave { left: 16px; } }
+
+/* Three camp objects open a room. The anchor is the object's own box.
+   No hover state on purpose: the drawing is the link. */
+.door { position: absolute; display: block; pointer-events: auto; -webkit-tap-highlight-color: transparent; }
+.door > img { display: block; }
+.door:focus-visible { outline: 2px dashed #111; outline-offset: 6px; }

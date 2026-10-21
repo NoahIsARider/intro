@@ -1,0 +1,12 @@
+Draw with your image generation tool, one single image. Save it as the absolute path D:/Projects/个人主页/intro/art-src/raw/bg-rest.png. Use no code, no API, no download, only the image generation tool.
+
+One hand-painted plate for a faded children's encyclopedia that has been left in the damp. Landscape 3:2. Gouache and thin ink on coarse paper, painted by a patient amateur illustrator. Palette: pale cream, ash grey, faded olive, almost no contrast at all. Visible paper grain, pigment mottling, small foxing spots, chalky muted pigment, a fine dark vignette at the four edges, no digital smoothness and no photographic depth of field.
+
+SCENE
+a still lake at dawn seen from the shore, the water glass-flat and holding the pale sky, a low dark band of far bank, three thin reeds at the far left, one flat stone at the near edge. Nothing moves. High key, half the picture nearly the same pale tone.
+
+COMPOSITION RULE
+Keep a quiet, almost empty band of empty water and sky across the upper two thirds where a title will sit, with nothing of interest there. Treat empty ground as the subject. At most one large element and a few small ones. Everything sits low and flat, like a staging set rather than a photograph.
+
+FORBIDDEN
+Figures, people, animals with faces, lettering, numbers, signature, watermark, border, frame, sun disc, moon disc, lens flare, bokeh, HDR, neon, highly saturated colour, anime, digital painting gloss, symmetrical wallpaper pattern.

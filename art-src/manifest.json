@@ -1,0 +1,146 @@
+[
+ {
+  "prompt": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src\\prompts\\w-tent.txt",
+  "out": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src/raw/w-tent.png"
+ },
+ {
+  "prompt": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src\\prompts\\w-doll.txt",
+  "out": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src/raw/w-doll.png"
+ },
+ {
+  "prompt": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src\\prompts\\w-mask.txt",
+  "out": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src/raw/w-mask.png"
+ },
+ {
+  "prompt": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src\\prompts\\w-teeth.txt",
+  "out": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src/raw/w-teeth.png"
+ },
+ {
+  "prompt": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src\\prompts\\w-cradle.txt",
+  "out": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src/raw/w-cradle.png"
+ },
+ {
+  "prompt": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src\\prompts\\w-skull.txt",
+  "out": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src/raw/w-skull.png"
+ },
+ {
+  "prompt": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src\\prompts\\w-bell.txt",
+  "out": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src/raw/w-bell.png"
+ },
+ {
+  "prompt": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src\\prompts\\w-key.txt",
+  "out": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src/raw/w-key.png"
+ },
+ {
+  "prompt": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src\\prompts\\w-moth.txt",
+  "out": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src/raw/w-moth.png"
+ },
+ {
+  "prompt": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src\\prompts\\w-boot.txt",
+  "out": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src/raw/w-boot.png"
+ },
+ {
+  "prompt": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src\\prompts\\w-cup.txt",
+  "out": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src/raw/w-cup.png"
+ },
+ {
+  "prompt": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src\\prompts\\w-toadstools.txt",
+  "out": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src/raw/w-toadstools.png"
+ },
+ {
+  "prompt": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src\\prompts\\i-door.txt",
+  "out": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src/raw/i-door.png"
+ },
+ {
+  "prompt": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src\\prompts\\i-lantern.txt",
+  "out": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src/raw/i-lantern.png"
+ },
+ {
+  "prompt": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src\\prompts\\i-ledger.txt",
+  "out": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src/raw/i-ledger.png"
+ },
+ {
+  "prompt": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src\\prompts\\i-hourglass.txt",
+  "out": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src/raw/i-hourglass.png"
+ },
+ {
+  "prompt": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src\\prompts\\i-key.txt",
+  "out": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src/raw/i-key.png"
+ },
+ {
+  "prompt": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src\\prompts\\i-bottle.txt",
+  "out": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src/raw/i-bottle.png"
+ },
+ {
+  "prompt": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src\\prompts\\i-cards.txt",
+  "out": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src/raw/i-cards.png"
+ },
+ {
+  "prompt": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src\\prompts\\i-cairn.txt",
+  "out": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src/raw/i-cairn.png"
+ },
+ {
+  "prompt": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src\\prompts\\i-thread.txt",
+  "out": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src/raw/i-thread.png"
+ },
+ {
+  "prompt": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src\\prompts\\i-moth.txt",
+  "out": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src/raw/i-moth.png"
+ },
+ {
+  "prompt": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src\\prompts\\r-chair.txt",
+  "out": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src/raw/r-chair.png"
+ },
+ {
+  "prompt": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src\\prompts\\r-cup.txt",
+  "out": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src/raw/r-cup.png"
+ },
+ {
+  "prompt": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src\\prompts\\r-book.txt",
+  "out": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src/raw/r-book.png"
+ },
+ {
+  "prompt": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src\\prompts\\r-blanket.txt",
+  "out": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src/raw/r-blanket.png"
+ },
+ {
+  "prompt": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src\\prompts\\r-lantern.txt",
+  "out": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src/raw/r-lantern.png"
+ },
+ {
+  "prompt": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src\\prompts\\r-stone.txt",
+  "out": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src/raw/r-stone.png"
+ },
+ {
+  "prompt": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src\\prompts\\r-grass.txt",
+  "out": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src/raw/r-grass.png"
+ },
+ {
+  "prompt": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src\\prompts\\r-candle.txt",
+  "out": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src/raw/r-candle.png"
+ },
+ {
+  "prompt": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src\\prompts\\r-letters.txt",
+  "out": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src/raw/r-letters.png"
+ },
+ {
+  "prompt": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src\\prompts\\r-bowl.txt",
+  "out": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src/raw/r-bowl.png"
+ },
+ {
+  "prompt": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src\\prompts\\bg-weird.txt",
+  "out": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src/raw/bg-weird.png"
+ },
+ {
+  "prompt": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src\\prompts\\bg-ideas.txt",
+  "out": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src/raw/bg-ideas.png"
+ },
+ {
+  "prompt": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src\\prompts\\bg-rest.txt",
+  "out": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src/raw/bg-rest.png"
+ },
+ {
+  "prompt": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src\\prompts\\cursor.txt",
+  "out": "D:/Projects/\u4e2a\u4eba\u4e3b\u9875/intro/art-src/raw/cursor.png"
+ }
+]

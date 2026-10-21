@@ -8,6 +8,10 @@ The page is deliberately generic so the same file can be dropped on any host. It
 
 - `index.html` — homepage only; no game scripts or hidden scene
 - `game.html`, `field.css`, `field.js` — independent game page; no external requests
+- `weird.html`, `ideas.html`, `rooms.css` — the two plates behind the field: a painted background and one line of type set in the same Fell face and size as the title
+- `assets/rooms/bg-weird.webp`, `assets/rooms/bg-ideas.webp` — the two plates, 1672 × 941
+- `assets/fonts/` — IM Fell English, self-hosted woff2, no external requests
+- `art-src/` — the generated source art, the prompt set and the cutting scripts' output; never served
 - `world-layout.js` — hand-placed groves, clearings and camp
 - `coffee.png` — the doodle, 779×1254, transparent background
 - `assets/sprites/`, `assets/sprites.js` — 70 generated sprite entries, their sizes and a river collision mask
@@ -21,9 +25,10 @@ The page is deliberately generic so the same file can be dropped on any host. It
 
 ```sh
 rm -rf dist && mkdir -p dist/assets
-cp index.html game.html field.css field.js world-layout.js coffee.png favicon.png dist/
+cp index.html game.html weird.html ideas.html field.css rooms.css field.js world-layout.js coffee.png favicon.png dist/
 cp assets/sprites.js assets/river-v5.png dist/assets/
 cp -r assets/sprites dist/assets/sprites
+cp -r assets/rooms assets/fonts dist/assets/
 python scripts/make-zip.py
 ```
 
@@ -39,9 +44,16 @@ node scripts/preview.cjs
 
 Published at https://noahisarider.github.io/intro/ and https://noahisarider.envs.net/; the nekoweb copy comes from `intro-nekoweb.zip`.
 
+## The two doors in the field
+
+Three camp objects were drawn in the game and two of them carry a link. The tent opens `weird.html`, the stone arch opens `ideas.html`. Each is an anchor laid over the object's own box, with no tooltip, no cursor change and no hover state, so the drawing itself behaves as the link. The log stool by the fire is not a door.
+
+Each plate is a single composition: one painted background, the title, and one sentence set at `clamp(2.4rem, 6.2vw, 5.4rem)` in IM Fell English. Nothing else is on the page. Labels, panels, badges and objects were tried and taken out again.
+
 ## Controls
 
 - Click the character to enter
+- Click the tent or the stone arch to leave the field for one of the two plates
 - Click the ground or use WASD / arrow keys to steer temporarily
 - The complete map stays centered and visible; no camera following, dragging or game zoom
 - The character finds resources automatically; click a tree, rock or edible plant to gather there

@@ -1,0 +1,12 @@
+Draw with your image generation tool, one single image. Save it as the absolute path D:/Projects/个人主页/intro/art-src/raw/bg-weird.png. Use no code, no API, no download, only the image generation tool.
+
+One hand-painted plate for a faded children's encyclopedia that has been left in the damp. Landscape 3:2. Gouache and thin ink on coarse paper, painted by a patient amateur illustrator. Palette: peat brown, bog green, dirty cream, a note of rust, everything dulled by damp. Visible paper grain, pigment mottling, small foxing spots, chalky muted pigment, a fine dark vignette at the four edges, no digital smoothness and no photographic depth of field.
+
+SCENE
+a waterlogged clearing at the edge of a birch bog, seen from standing height. Low hummocks of moss, standing black water in the hollows, a ring of pale toadstools at the middle distance, a dead silver birch at the left edge, ground mist lying in the dips. Nothing alive is visible. The mood is the minute after someone has walked away.
+
+COMPOSITION RULE
+Keep a quiet, almost empty band of sky and mist across the upper third where a title will sit, with nothing of interest there. Treat empty ground as the subject. At most one large element and a few small ones. Everything sits low and flat, like a staging set rather than a photograph.
+
+FORBIDDEN
+Figures, people, animals with faces, lettering, numbers, signature, watermark, border, frame, sun disc, moon disc, lens flare, bokeh, HDR, neon, highly saturated colour, anime, digital painting gloss, symmetrical wallpaper pattern.

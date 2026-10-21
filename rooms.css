@@ -1,0 +1,103 @@
+/* ============================================================
+   rooms.css — two plates behind the field
+   A painted plate fills the window. One line of type sits on it,
+   set in the same hand and the same size as the title. Nothing else.
+   ============================================================ */
+
+@font-face {
+  font-family: "Fell";
+  src: url("assets/fonts/IMFellEnglish-normal-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Fell";
+  src: url("assets/fonts/IMFellEnglish-italic-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  --cream: #e6d5c2;
+  --edge: #4c4640;
+  --display: "Fell", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  --set-size: clamp(2.4rem, 6.2vw, 5.4rem);
+}
+
+* { box-sizing: border-box; }
+
+html, body { height: 100%; }
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: #12100d;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--cream);
+  font-family: var(--display);
+}
+
+body.weird { background-image: url("assets/rooms/bg-weird.webp"); }
+body.ideas { background-image: url("assets/rooms/bg-ideas.webp"); }
+
+::selection { color: #d1ded8; background-color: #483e49; }
+
+.skip { position: absolute; left: -9999px; }
+.skip:focus { left: 1rem; top: 1rem; z-index: 99; padding: .4rem .8rem; background: #2e302e; color: var(--cream); }
+
+.plate {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 100svh;
+}
+
+/* title and the line under it share one setting */
+
+h1,
+.aside {
+  margin: 0;
+  font-weight: 400;
+  font-size: var(--set-size);
+  line-height: .98;
+  letter-spacing: .1em;
+  text-align: center;
+  color: var(--cream);
+  text-shadow:
+    0 -2px var(--edge),
+    2px 0 var(--edge),
+    0 2px var(--edge),
+    -2px 0 var(--edge),
+    0 20px 46px rgb(0 0 0 / 55%);
+}
+h1 { width: min(88vw, 20ch); }
+.aside { width: min(88vw, 26ch); }
+.aside p { margin: 0; }
+
+h1 {
+  position: absolute;
+  left: 50%;
+  top: 6.5vh;
+  transform: translateX(-50%);
+}
+
+.aside {
+  position: absolute;
+  left: 50%;
+  top: 42vh;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 820px) {
+  body { overflow: auto; }
+  h1 { position: static; transform: none; width: auto; margin: 5vh 1.2rem 0; font-size: clamp(1.9rem, 9vw, 3rem); }
+  .aside { position: static; transform: none; width: auto; margin: 1.6rem 1.2rem 0; font-size: clamp(1.9rem, 9vw, 3rem); text-align: left; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}
