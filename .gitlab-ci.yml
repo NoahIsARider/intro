@@ -1,0 +1,12 @@
+pages:
+  stage: deploy
+  script:
+    - mkdir -p public/assets
+    - cp index.html game.html weird.html ideas.html field.css rooms.css field.js world-layout.js coffee.png favicon.png public/
+    - cp assets/sprites.js assets/river-v5.png public/assets/
+    - cp -r assets/sprites assets/rooms assets/fonts public/assets/
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main"'
