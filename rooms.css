@@ -42,7 +42,7 @@ body {
 }
 
 body.weird { background-image: url("assets/rooms/bg-weird.webp"); }
-body.ideas { background-image: url("assets/rooms/bg-ideas.webp"); }
+body.ideas { background-image: url("assets/rooms/bg-ideas.webp?v=f8f1f8e9"); }
 
 ::selection { color: #d1ded8; background-color: #483e49; }
 
