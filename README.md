@@ -42,7 +42,10 @@ Open `index.html` directly, or serve the folder. No package installation, build 
 node scripts/preview.cjs
 ```
 
-Published at https://noahisarider.github.io/intro/ and https://noahisarider.envs.net/; the nekoweb copy comes from `intro-nekoweb.zip`.
+Published at https://noahisarider.github.io/intro/ and https://noahisarider.envs.net/. The
+Nekoweb (`https://noahisarider.nekoweb.org/`) and Neocities
+(`https://noahisarider.neocities.org/`) copies are this repository, not the `now` site, and
+both come from `intro-nekoweb.zip`.
 
 ## The two doors in the field
 
